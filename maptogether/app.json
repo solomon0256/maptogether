@@ -1,22 +1,32 @@
 {
   "expo": {
-    "name": "maptogether",
-    "slug": "maptogether",
+    "name": "firstexpo",
+    "slug": "firstexpo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "maptogether",
+    "scheme": "firstexpo",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yuhewen.maptogether",
+      "config": {
+        "googleMapsApiKey": "AIzaSyCpVcfPoGDI-MDgEtId-gWfNcvYItV2CvU"
+      }
     },
     "android": {
+      "package": "wenyuhe.maptogether",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyB-YuyW-CaFaGDSplMCf0LZ30XdB64HVL8"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
@@ -34,10 +44,16 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      "expo-secure-store"
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6e910a8b-420f-403c-a861-248b4fb06bc9"
+      }
     }
   }
 }
